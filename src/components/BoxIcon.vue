@@ -6,6 +6,7 @@
             <p class="description">
               {{descripcion}}
             </p>
+           
           </div>
 </template>
 <!-- eslint-disable prettier/prettier -->
