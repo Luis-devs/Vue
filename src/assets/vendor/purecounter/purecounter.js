@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /*!
  * purecounter.js - A simple yet configurable native javascript counter which you can count on.
  * Author: Stig Rex
@@ -5,6 +6,7 @@
  * Url: https://github.com/srexi/purecounterjs
  * License: MIT
  */
+
 ! function() {
     "use strict";
 
@@ -35,7 +37,7 @@
                 if (this.intersectionListenerSupported()) {
                     var t = new IntersectionObserver(this.animateElements.bind(this), { root: null, rootMargin: "20px", threshold: .5 });
                     e.forEach((function(e) { t.observe(e) }))
-                } else window.addEventListener && (this.animateLegacy(e), window.addEventListener("scroll", (function(t) { this.animateLegacy(e) }), { passive: !0 }))
+                } else window.addEventListener && (this.animateLegacy(e), window.addEventListener("scroll", (function() { this.animateLegacy(e) }), { passive: !0 }))
             }
         }, {
             key: "animateLegacy",

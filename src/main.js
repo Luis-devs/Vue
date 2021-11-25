@@ -6,18 +6,23 @@ import router from "./router";
 import "jquery";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./assets/vendor/bootstrap-icons/bootstrap-icons.css";
-import "./assets/css/style.css";
+
 
 import "./assets/vendor/boxicons/css/boxicons.min.css";
 
 
-
+import "./assets/vendor/glightbox/css/glightbox.css";
 import "./assets/vendor/glightbox/css/glightbox.min.css";
 import "./assets/vendor/swiper/swiper-bundle.min.css";
 
-import "popper.js";
-import "./assets/js/main.js";
 
+import "popper.js";
+
+import "./assets/vendor/purecounter/purecounter.js";
+/*import "./assets/vendor/glightbox/js/glightbox.js";
+import "./assets/vendor/glightbox/js/glightbox.min.js";*/
+import "./assets/css/style.css";
+import "./assets/js/main.js";
 /*
 import "./assets/vendor/bootstrap/js/bootstrap.bundle.min.js";
 import "./assets/vendor/glightbox/js/glightbox.min.js";
@@ -37,7 +42,7 @@ import "./assets/vendor/glightbox/css/glightbox.min.css";
 import "./assets/vendor/swiper/swiper-bundle.min.css";
 import "./assets/css/style.css";
 import "./assets/js/main.js"; */
-//import "./assets/js/main.js";
+
 Vue.config.productionTip = false;
 new Vue({
 

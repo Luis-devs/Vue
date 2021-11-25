@@ -1,13 +1,13 @@
 <!-- eslint-disable prettier/prettier -->
 <template>
   <div class="icon-box">
-            <div class="icon"><i :class="clase"></i></div>
-            <h4 class="title"><a href="">{{titulo}}</a></h4>
-            <p class="description">
+      <div class="icon"><i :style="ponColor" :class="clase"></i></div>
+        <h4 class="title"><a href="">{{titulo}}</a></h4>
+        <p class="description">
               {{descripcion}}
-            </p>
+        </p>
            
-          </div>
+  </div>
 </template>
 <!-- eslint-disable prettier/prettier -->
 <script>
@@ -18,6 +18,7 @@ export default {
     clase: String,
     titulo:String,
     descripcion:String,
+    ponColor:String,
   },
 };
 </script>
