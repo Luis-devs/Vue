@@ -9,7 +9,7 @@
                     <div><a href="#about" class="btn-get-started scrollto">Get Started</a></div>
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2 hero-img">
-                    <img src="../assets/img/hero-img.png" class="img-fluid"/>
+                    <img :src="srcm" class="img-fluid"/>
                 </div>
             </div>
         </div>
@@ -21,7 +21,7 @@
 export default {
     name:"Section1",
     props:{
-        srcm:String
+        srcm:String,
         },
     components:{
        
