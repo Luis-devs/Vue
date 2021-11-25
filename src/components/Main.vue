@@ -11,7 +11,8 @@ import About from"@/components/About.vue";
 export default {
     
   name: "Main",
-  components: {About,
+  components: {
+      About,
     },
 };
 </script>

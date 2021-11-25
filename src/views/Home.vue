@@ -4,6 +4,8 @@
     <NavBar />
     <Section1 :srcm="poner" />
     <Main/>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
   </div>
 </template>
 <!-- eslint-disable prettier/prettier -->
@@ -23,6 +25,7 @@ export default {
   },
   computed:{
     poner(){
+      
       return require("@/assets/img/hero-img.png");
     }, 
     },
