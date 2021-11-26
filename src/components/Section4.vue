@@ -38,7 +38,7 @@ export default {
     name:"Section4",
     components:{BoxIcon,}
 
-}
+};
 </script>
 
 <style>

@@ -59,9 +59,6 @@
 export default {
     name:"Section3",
     components:{},
-    props:{
-        imgs:Array,
-    },
 
 };
 </script>
