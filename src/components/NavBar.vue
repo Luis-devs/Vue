@@ -11,7 +11,7 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto active" href="/">Home</a></li>
                     <li><a class="nav-link scrollto" href="#about">About</a></li>
                     <li><a class="nav-link scrollto" href="#services">Services</a></li>
                     <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
@@ -35,7 +35,7 @@
                     </li>
                     <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
                 </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
+                <i class="bi bi-list mobile-nav-toggle" @click="desplegar($event)"></i>
             </nav>
             <!-- .navbar -->
 
@@ -48,6 +48,42 @@
 <script>
 export default {
     name:"NavBar",
+    methods:{
+        desplegar(e){
+            e.preventDefault();
+          
+            
+ 
+            var navbar = document.querySelector('#navbar');
+            //console.log(navbar);
+            if (navbar!=null) {
+                if (navbar.classList.contains('navbar-mobile')) {
+                    console.log("1")
+                    navbar.classList.remove('navbar-mobile')
+                    
+                    li.classList.remove('bi-x')
+                    //let navbarToggle = document.querySelector('.mobile-nav-toggle')
+                    //console.log("navtoggles: "+navbarToggle);
+                    //navbarToggle.classList.toggle('bi-list')
+                    //navbarToggle.classList.toggle('bi-x')
+                }
+                else{
+                console.log("2")
+                navbar.classList.toggle('navbar-mobile')
+                 li= document.querySelector('.bi.bi-list');
+                li.classList.toggle('bi-list')
+                li.classList.toggle('bi-x')
+            }
+            }
+            else{
+                console.log("2")
+                navbar.classList.toggle('navbar-mobile')
+                var li= document.querySelector('.bi.bi-list');
+                li.classList.toggle('bi-list')
+                li.classList.toggle('bi-x')
+            }
+        }
+    }
 };
 </script>
 

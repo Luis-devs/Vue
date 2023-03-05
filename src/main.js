@@ -7,8 +7,8 @@ import "jquery";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./assets/vendor/bootstrap-icons/bootstrap-icons.css";
 import "./assets/vendor/boxicons/css/boxicons.min.css";
-import "./assets/vendor/glightbox/css/glightbox.min.css";
-import "./assets/vendor/swiper/swiper-bundle.min.css";
+//import "./assets/vendor/glightbox/css/glightbox.min.css";
+//import "./assets/vendor/swiper/swiper-bundle.min.css";
 import "./assets/css/style.css";
 /*
 <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -18,9 +18,13 @@ import "./assets/css/style.css";
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 */
 
-import "popper.js";
+//import "popper.js";
 import "./assets/vendor/purecounter/purecounter.js";
+//import "./assets/vendor/bootstrap/js/bootstrap.bundle.min";
 import "./assets/vendor/glightbox/js/glightbox.min.js";
+//import "./assets/vendor/isotope-layout/isotope.pkgd.min";
+//import "./assets/vendor/swiper/swiper-bundle.min";
+
 
 /*import "./assets/vendor/glightbox/js/glightbox.js";
 import "./assets/vendor/glightbox/js/glightbox.min.js";*/
@@ -45,6 +49,8 @@ import "./assets/vendor/glightbox/css/glightbox.min.css";
 import "./assets/vendor/swiper/swiper-bundle.min.css";
 import "./assets/css/style.css";
 import "./assets/js/main.js"; */
+window.$ = window.jQuery = require("jquery");
+
 
 Vue.config.productionTip = false;
 new Vue({

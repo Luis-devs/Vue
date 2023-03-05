@@ -3,13 +3,13 @@
   <section id="clients" class="clients">
     <div class="container">
         <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
-            <div class="col-lg-3 col-md-4 col-6">
+            <div class="col-lg-3 col-md-4 col-6" v-for="i in rutas" :key="i">
                  <div class="client-logo">
-                    <img src="../assets/img/clients/client-1.png" class="img-fluid" alt="">
+                    <img :src="i" class="img-fluid" alt="">
                  </div>
             </div>
 
-            <div class="col-lg-3 col-md-4 col-6">
+            <!--<div class="col-lg-3 col-md-4 col-6">
                 <div class="client-logo">
                     <img src="../assets/img/clients/client-2.png" class="img-fluid" alt="">
                 </div>
@@ -48,7 +48,7 @@
                 <div class="client-logo">
                     <img src="../assets/img/clients/client-8.png" class="img-fluid" alt="">
                 </div>
-            </div>
+            </div>-->
         </div>
   </div>
   </section>
@@ -59,6 +59,14 @@
 export default {
     name:"Section3",
     components:{},
+    props:{
+        rutas:Array,
+    },
+    methods:{
+        devolver(){
+          
+        }
+    }
 
 };
 </script>

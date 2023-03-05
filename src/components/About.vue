@@ -2,7 +2,6 @@
 <template>
   <section id="about" class="about">
             <div class="container">
-
                 <div class="row">
                     <div class="col-xl-5 col-lg-6 d-flex justify-content-center video-box align-items-stretch position-relative">
                         <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a>
