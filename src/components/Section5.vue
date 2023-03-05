@@ -19,21 +19,21 @@
                 </div>
             <div class="row portfolio-container">
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div :class="'col-lg-4 col-md-6 portfolio-item '+ fila.tipoFiltro" v-for="fila in rutas" :key="fila">
                         <div class="portfolio-wrap">
-                            <img src="../assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+                            <img :src="fila.ruta" class="img-fluid" alt="">
                             <div class="portfolio-info">
-                                <h4>App 1</h4>
-                                <p>App</p>
+                                <h4>{{fila.titulo}}</h4>
+                                <p>{{fila.descripcion}}</p>
                                 <div class="portfolio-links">
-                                    <a href="../assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                                    <a :href="fila.ruta" data-gallery="portfolioGallery" class="portfolio-lightbox" :title="fila.descripcion"><i class="bx bx-plus"></i></a>
                                     <a href="/Portfolio-Detail" title="More Details"><i class="bx bx-link"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <!--<div class="col-lg-4 col-md-6 portfolio-item filter-web">
                         <div class="portfolio-wrap">
                             <img src="../assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
                             <div class="portfolio-info">
@@ -143,7 +143,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
 
                 </div>
         </div>
@@ -154,6 +154,9 @@
 
 export default {
     name:"Section5",
+    props:{
+        rutas:Array
+    },
     
 
 };
